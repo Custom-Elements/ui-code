@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>ui-code</title>
+    <script src="http://localhost:35729/livereload.js"></script>
+    <script src="node_modules/polymer/platform.js"></script>
+    <link rel="import" href="node_modules/polymer/polymer.html">
+    <link rel="import" href="node_modules/ui-styles/ui-styles.html">
+    <link rel="import" href="src/ui-code.html">
+    <style>
+      body {
+        font-family: "Helvetica Neue", "Helvetica", Arial;
+      }
+    </style>
+  </head>
+  <body unresolved container>
+      <ui-code>
+        var x = 'I am a var';
+        console.log(x);
+      </ui-code>
+      <ui-code language="html">
+        <span class="indeed">Ohh! Markup!</span>
+      </ui-code>
+    <script>
+      document.addEventListener('polymer-ready', function() {
+        //poke your element here
+      })
+    </script>
+  </body>
+</html>
