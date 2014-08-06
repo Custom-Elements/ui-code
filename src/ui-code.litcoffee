@@ -24,7 +24,6 @@ Wrap this around code strings for hilighting.
           code = hljs.highlightAuto @innerHTML, [@language]
         else
           code = hljs.highlightAuto @innerHTML
-        console.log @innerHTML, code
         @innerHTML = ''
         @$.display.innerHTML = hljs.fixMarkup code.value
 
